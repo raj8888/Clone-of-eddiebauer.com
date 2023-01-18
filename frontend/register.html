@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AA/Register from</title>
+    <link rel="stylesheet" href="./nav_and_footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./register.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="NavBar">
+      <div id="searchbar-div">
+        <!-- <div id="searchbar"> -->
+        <form id="search-bar">
+          <input type="search" placeholder="Search..." id="searchsec" />
+          <button type="submit" id="searchbtn">Search</button>
+        </form>
+        <!-- </div> -->
+        <div id="dashboardlogo">
+          <a href="./index.html"
+            ><img width="100%" src="../pro-images/project_logo.png" alt="logo"
+          /></a>
+        </div>
+        <div id="bag-logo">
+          <div class="dropdown">
+            <button class="dropbtn" id="log-reg-button">SignUp || Login</button>
+            <div class="dropdown-content" id="drpcontent-div">
+              <div id="reg">
+                <h2>Don't have account?</h2>
+                <button id="reg-button">CREAT A NEW ACCOUNT</button>
+                <hr id="btn-line" />
+                <h2>Sign into your account</h2>
+                <form>
+                  <div id="email-div">
+                    <p>Email</p>
+                    <input
+                      type="email"
+                      id="emailip"
+                      placeholder="Enter email here..."
+                      required
+                    />
+                  </div>
+                  <div id="pass-div">
+                    <p>Password</p>
+                    <input
+                      type="password"
+                      id="passip"
+                      placeholder="Enter password here..."
+                      autocomplete="on"
+                      required
+                    />
+                  </div>
+                  <button id="log-btn">SIGN IN</button>
+                  <a href="" id="forgot-pass">forgot password?</a>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a href=""
+            ><img src="../pro-images//bag-logo.jpg" alt="" id="bag-sec"
+          /></a>
+          <a href="" id="bag-sec">bag</a>
+        </div>
+      </div>
+  
+      <div class="topnav" id="myTopnav">
+        <div class="downdrop" >
+          <button class="btndrop">
+            NEW!
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="new-sec">
+            <div class="temp-div">
+              <div>
+                <h3>Featured</h3>
+                <a href="#">Womens cold weather outfit</a>
+                <a href="#">Mens cold weather outfit</a>
+                <a href="#">Womens cold weather training</a>
+                <a href="#">Mens cold weather training</a>
+                <a href="#">Ski shop</a>
+                <a href="#">Winter boots</a>
+              </div>
+              <div class="last-div">
+                <h3>Shop by category</h3>
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">Outwear</a>
+                <a href="#">Footwear</a>
+                <a href="#">Kids</a>
+                <a href="#">Gear</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+            WOMENS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="women-sec">
+            <div class="temp-div">
+              <div>
+                <h3>Featured</h3>
+                <a href="#">View all</a>
+                <a href="#">Sale</a>
+                <a href="#">New arrivals</a>
+                <a href="#">Womes's tall</a>
+                <a href="#">Women's plus</a>
+                <a href="#">Women's petite</a>
+                <a href="#">Gender neutral</a>
+              </div>
+              <div>
+                <h3>Special Collection</h3>
+                <a href="#">Homme + Femme</a>
+                <a href="#">The Greate</a>
+                <a href="#">Christopher Bevans</a>
+                <a href="#">Tops</a>
+                <a href="#">Essentials</a>
+              </div>
+              <div>
+                <h3>Tops</h3>
+                <a href="#">Tshirt</a>
+                <a href="#">Sweetshirts</a>
+                <a href="#">Shirt</a>
+                <a href="#">Flannets</a>
+                <a href="#">Sweaters</a>
+                <a href="#">Shirt Jackets</a>
+                <a href="#">Thermals</a>
+                <a href="#">Tank tops</a>
+              </div>
+              <div>
+                <h3>Bottoms</h3>
+                <a href="#">Pants</a>
+                <a href="#">Jeans</a>
+                <a href="#">Lines Bottoms</a>
+                <a href="#">Joggers</a>
+                <a href="#">Shorts</a>
+                <a href="#">Leggins shop</a>
+                <a href="#">Denim shop</a>
+              </div>
+              <div>
+                <h3>Outewear</h3>
+                <a href="#">Jacket</a>
+                <a href="#">Parks</a>
+                <a href="#">Insulated</a>
+                <a href="#">Rainwear</a>
+                <a href="#">Vests</a>
+                <a href="#">pants</a>
+              </div>
+              <div class="last-div">
+                <h3>Accesories</h3>
+                <a href="#">Gloves</a>
+                <a href="#">Socks</a>
+                <a href="#">Hals</a>
+                <a href="#">Bennies</a>
+                <a href="#">Belts</a>
+                <a href="#">Scarver</a>
+                <a href="#">Hiking</a>
+                <a href="#">Boots</a>
+                <a href="#">Casual</a>
+                <a href="#">Sansadal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+            MENS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="men-sec">
+            <div class="temp-div">
+              <div>
+                <h3>Featured</h3>
+                <a href="#">View all</a>
+                <a href="#">Sale</a>
+                <a href="#">New arrivals</a>
+                <a href="#">Mes's tall</a>
+                <a href="#">Men's plus</a>
+                <a href="#">Men's petite</a>
+                <a href="#">Gender neutral</a>
+              </div>
+              <div>
+                <h3>Special Collection</h3>
+                <a href="#">Homme + Femme</a>
+                <a href="#">The Greate</a>
+                <a href="#">Christopher Bevans</a>
+                <a href="#">Tops</a>
+                <a href="#">Essentials</a>
+              </div>
+              <div>
+                <h3>Tops</h3>
+                <a href="#">Tshirt</a>
+                <a href="#">Sweetshirts</a>
+                <a href="#">Shirt</a>
+                <a href="#">Flannets</a>
+                <a href="#">Sweaters</a>
+                <a href="#">Shirt Jackets</a>
+                <a href="#">Thermals</a>
+                <a href="#">Tank tops</a>
+              </div>
+              <div>
+                <h3>Bottoms</h3>
+                <a href="#">Pants</a>
+                <a href="#">Jeans</a>
+                <a href="#">Lines Bottoms</a>
+                <a href="#">Joggers</a>
+                <a href="#">Shorts</a>
+                <a href="#">Leggins shop</a>
+                <a href="#">Denim shop</a>
+              </div>
+              <div>
+                <h3>Outewear</h3>
+                <a href="#">Jacket</a>
+                <a href="#">Parks</a>
+                <a href="#">Insulated</a>
+                <a href="#">Rainwear</a>
+                <a href="#">Vests</a>
+                <a href="#">pants</a>
+              </div>
+              <div class="last-div">
+                <h3>Accesories</h3>
+                <a href="#">Gloves</a>
+                <a href="#">Socks</a>
+                <a href="#">Hals</a>
+                <a href="#">Bennies</a>
+                <a href="#">Belts</a>
+                <a href="#">Scarver</a>
+                <a href="#">Hiking</a>
+                <a href="#">Boots</a>
+                <a href="#">Casual</a>
+                <a href="#">Sansadal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+            KIDS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="kids-sec">
+            <div class="temp-div">
+              <div>
+                <h3>Featured</h3>
+                <a href="#">View all</a>
+                <a href="#">Girl's new arrival</a>
+                <a href="#">Boy's new arrival</a>
+                <a href="#">Family spleep</a>
+                <a href="#">Sale</a>
+              </div>
+              <div>
+                <h3>Boys</h3>
+                <a href="#">Tops</a>
+                <a href="#">Jackets</a>
+                <a href="#">Fleece</a>
+                <a href="#">Bottoms</a>
+                <a href="#">Sleep</a>
+                <a href="#">Swim</a>
+              </div>
+              <div>
+                  <h3>Girls</h3>
+                  <a href="#">Tops</a>
+                  <a href="#">Jackets</a>
+                  <a href="#">Fleece</a>
+                  <a href="#">Bottoms</a>
+                  <a href="#">Sleep</a>
+                  <a href="#">Swim</a>
+                </div>
+              <div class="last-div">
+                <h3>Infant Toddler</h3>
+                <a href="#">Jacket</a>
+                <a href="#">Fleece</a>
+                <a href="#">Sleep</a>
+                <a href="#">Accesories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+            OUTWEAR
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="outwear-sec">
+            <div class="temp-div">
+              <div>
+                <h3>KIDS</h3>
+                <a href="#">View all</a>
+                <a href="#">Girl's new arrival</a>
+                <a href="#">Boy's new arrival</a>
+                <a href="#">Family spleep</a>
+                <a href="#">Sale</a>
+              </div>
+              <div>
+                <h3>MENS</h3>
+                <a href="#">Tops</a>
+                <a href="#">Jackets</a>
+                <a href="#">Fleece</a>
+                <a href="#">Bottoms</a>
+                <a href="#">Sleep</a>
+                <a href="#">Swim</a>
+              </div>
+              <div>
+                  <h3>WOMENS</h3>
+                  <a href="#">Tops</a>
+                  <a href="#">Jackets</a>
+                  <a href="#">Fleece</a>
+                  <a href="#">Bottoms</a>
+                  <a href="#">Sleep</a>
+                  <a href="#">Swim</a>
+                </div>
+              <div class="last-div">
+                <h3>Outwear Guide</h3>
+                <a href="#">Temprature ratings</a>
+                <a href="#">Caring for down</a>
+                <a href="#">Down innovations</a>
+                <a href="#">Caring for everthern</a>
+                <a href="#">Caring for stormrepel</a>
+                <a href="#">Caring for waterproof outwear</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+            GEAR
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="gear-sec">
+            <div class="temp-div">
+              <div>
+                <h3>Featured</h3>
+                <a href="#">View all</a>
+                <a href="#">New arrivals</a>
+                <a href="#">Sale</a>
+              </div>
+              <div>
+                <h3>Brands</h3>
+                <a href="#">Stanley</a>
+                <a href="#">Nileize</a>
+                <a href="#">Travelon</a>
+              </div>
+              <div>
+                  <h3>Luggagae</h3>
+                  <a href="#">Looptworks</a>
+                  <a href="#">Bagpacks</a>
+                  <a href="#">Duffels</a>
+                  <a href="#">Luggage tote bags</a>
+                </div>
+                <div>
+                  <h3>Camping</h3>
+                  <a href="#">Tents</a>
+                  <a href="#">Sleeping bags</a>
+                  <a href="#">Chair</a>
+                  <a href="#">Outdoor blanket</a>
+                </div>
+              <div class="last-div">
+                <h3>Accesories</h3>
+                <a href="#">Travel</a>
+                <a href="#">Outdoor</a>
+                <a href="#">Lighting</a>
+                <a href="#">Games</a>
+                <a href="#">Knives & tools</a>
+                <a href="#">Sunglasses</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+            FOOTWEAR
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="footwear-sec">
+            <div class="temp-div">
+              <div>
+                <h3>Featured</h3>
+                <a href="#">View all</a>
+                <a href="#">New arrivals</a>
+                <a href="#">Sale</a>
+              </div>
+                <div>
+                  <h3>Womens</h3>
+                  <a href="#">Boots</a>
+                  <a href="#">Sleeper</a>
+                  <a href="#">Casual</a>
+                  <a href="#">Hiking</a>
+                  <a href="#">Socks</a>
+                  <a href="#">Sandals</a>
+                </div>
+              <div class="last-div">
+                <h3>Mens</h3>
+                <a href="#">Boots</a>
+                  <a href="#">Sleeper</a>
+                  <a href="#">Casual</a>
+                  <a href="#">Hiking</a>
+                  <a href="#">Socks</a>
+                  <a href="#">Sandals</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+            SALE
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="sale-sec">
+            <div class="temp-div">
+              <div>
+                <h3>Buy more & sale</h3>
+                <a href="#">Top</a>
+                <a href="#">Essentials</a>
+              </div>
+                <div>
+                  <h3>Womens</h3>
+                  <a href="#">Tops</a>
+                  <a href="#">Bottoms</a>
+                  <a href="#">Outwear</a>
+                  <a href="#">Footwear</a>
+                  <a href="#">Accesories</a>
+                </div>
+                <div>
+                  <h3>Mens</h3>
+                  <a href="#">Tops</a>
+                  <a href="#">Bottoms</a>
+                  <a href="#">Outwear</a>
+                  <a href="#">Footwear</a>
+                  <a href="#">Accesories</a>
+                </div>
+              <div class="last-div">
+                <h3>Kids</h3>
+                <a href="#">Girls</a>
+                <a href="#">Boys</a>
+                <a href="#">Instant & Toddler</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+           HOME
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="home-sec">
+            <div class="temp-div">
+              <div>
+                <h3>Featured</h3>
+                <a href="#">View all</a>
+                <a href="#">New arrivals</a>
+                <a href="#">Sale</a>
+              </div>
+              <div class="last-div">
+                <h3>Kids</h3>
+                <a href="#">Blanket & throws</a>
+                <a href="#">Sheets</a>
+                <a href="#">Pillows</a>
+                <a href="#">Covers & Shams</a>
+                <a href="#">Comferters</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+           CLEARENCE
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="clear-sec">
+            <div class="temp-div">
+                <div>
+                  <h3>Womens</h3>
+                  <a href="#">Tops</a>
+                  <a href="#">Bottoms</a>
+                  <a href="#">Outwear</a>
+                  <a href="#">Footwear</a>
+                  <a href="#">Accesories</a>
+                  <a href="#">Fleece</a>
+                </div>
+                <div>
+                  <h3>Mens</h3>
+                  <a href="#">Tops</a>
+                  <a href="#">Bottoms</a>
+                  <a href="#">Outwear</a>
+                  <a href="#">Footwear</a>
+                  <a href="#">Accesories</a>
+                  <a href="#">Fleece</a>
+                </div>
+              <div class="last-div">
+                <h3>Kids</h3>
+                <a href="#">Girls</a>
+                <a href="#">Boys</a>
+                <a href="#">Instant & Toddler</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="downdrop">
+          <button class="btndrop">
+           GUIDE POSTS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="downdrop-content" id="guide-posts">
+            <div class="temp-div">
+                <div>
+                  <h3>Featured</h3>
+                  <a href="#">The guid built process</a>
+                  <a href="#">Award & Press</a>
+                  <a href="#">One outside filt grant</a>
+                  <a href="#">Sleep under the stars</a>
+                  <a href="#">Inovative gears</a>
+                </div>
+                <div>
+                  <h3>About Us</h3>
+                  <a href="#">Our founder</a>
+                  <a href="#">Award & Press</a>
+                  <a href="#">Careers</a>
+                </div>
+                <div>
+                  <h3>Guide Team</h3>
+                  <a href="#">The guide buit process</a>
+                  <a href="#">Meet the team</a>
+                </div>
+                <div>
+                  <h3>Parteners</h3>
+                  <a href="#">American forests</a>
+                  <a href="#">The heroes project</a>
+                  <a href="#">The venture project</a>
+                </div>
+              <div class="last-div">
+                <h3>Stories</h3>
+                <a href="#">New</a> 
+                <a href="#">Camp & Hikes</a> 
+                <a href="#">Wellness</a> 
+                <a href="#">Food</a> 
+                <a href="#">Recent video</a> 
+                <a href="#">Community</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </div>
+<!-- REGISTER FORM -->
+<div id="mid-reg-cont">
+    <div id="reg-form-div">
+        <form id="reg-form">
+            <div id="container">
+                <h2>Create A New Account</h2>
+              <div id="div-show-msg"></div>
+                <p id="login_email"></p>
+        
+                <label>FirstName<span style="color: red">*</span></label>
+                <input type="text" id="fname" required />
+                <label>LastName<span style="color: red">*</span></label>
+                <input type="text" id="lname" required />
+                <label for="email">Email<span style="color: red">*</span></label>
+                <input type="email" id="email" required />
+                <label for="location">Location</label><input type="text" id="loc">
+                <label for="mobile">Mobile</label><input type="text" id="mob">
+                <label>Create password<span style="color: red">*</span></label>
+                <input type="password" id="password" autocomplete="off" required />
+                <label>ReEnter password<span style="color: red">*</span></label>
+                <input type="password" id="repassword" autocomplete="off" required />
+                <div id="div2">
+                  <p>
+                    By creating an account, you agree to our
+                    <a href="#">Privacy Policy</a>and
+                    <a href="#">Terms & Conditions</a>.
+                  </p>
+                </div>
+        
+                <button id="signup-btn">Create Account</button>
+              </div>
+        </form>
+    </div>
+    <div id="img-reg">
+        <img src="https://www.eddiebauer.com/static/signup-right-image.png" alt="">
+        <div id="reg-img-cont">
+            <div id="img-tp">
+                <img src="../pro-images/project_logo.png" alt="">
+            </div>
+            <div>
+                <h1>Adventure Rewards</h1>
+                <h3>One Account Gets You Everything</h3>
+                <p>Adventure Rewards, Exclusive Offers and More!</p>
+                <li>Earn points on every purchase</li>
+                <li>Quarterly Certificates</li>
+                <li>Free Shipping Benefits</li>
+                <li>Early access to new products & promotions</li>
+                <li>Birthday Gift</li>
+                <li>Receipts & Easy Returns</li>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <div id="com-footer">
+        <div id="fir-foo-div">
+          <div class="store-locator">
+            <div class="img-sl">
+              <img src="../adventure-img/location.png" alt="">
+            </div>
+            <div class="store-info">
+              <h3>STORE LOCATER</h3>
+              <p>find one of over 275 Adventure alpha stores in north america</p>
+            </div>
+          </div>
+          <div class="store-locator">
+            <div class="img-sl">
+              <img src="../adventure-img/rewards.png" alt="">
+            </div>
+            <div class="store-info">
+              <h3>ADVENTURE REWARDS</h3>
+              <p>Earn points on every purchase. Sign up today for 500 points towards your first reward!</p>
+            </div>
+          </div>
+          <div class="store-locator">
+            <div class="img-sl">
+              <img src="../adventure-img/vision.png" alt="">
+            </div>
+            <div class="store-info">
+              <h3>VISION STATEMENT</h3>
+              <p>To inspire, enable, and empower everyone to experience the outdoors and live their adventure.</p>
+            </div>
+          </div>
+        </div>
+        <hr id="foot-mid-line">
+        <div id="sec-foo-div">
+          <div class="foo-mid-info">
+            <h4>HELP</h4>
+           <p> Customer Service</p>
+            <p>Track Your Order</p>
+            <p>Return Policy</p>
+            <p>Start A Return</p>
+           <p> Shipping</p>
+           <p> Payment Options</p>
+           <p> Contact Us</p>
+          </div>
+          <div class="foo-mid-info">
+            <h4>SHOPPING</h4>
+            <p>Sign In / Register</p>
+            <p>Adventure Rewards</p>
+            <p>Buy Gift Cards</p>
+            <p>Promos And Coupons</p>
+            <p>Find Your Fit</p>
+            <p>Price Match Policy</p>
+          </div>
+          <div class="foo-mid-info">
+            <h4>EB CREDIT CARD</h4>
+            <p>Apply Now</p>
+            <p>Pay My Bill</p>
+            <h4>VISIT A STORE</h4>
+            <p>Store Locator</p>
+        </div>
+        <div class="foo-mid-info">
+          <h4>(RE)ADVENTURE</h4>
+          <p>About</p>
+          <p>Resale</p>
+      </div>
+      <div class="foo-mid-info">
+        <h4>ABOUT US</h4>
+        <p>Our Story</p>
+        <p>Careers</p>
+        <p>Land Acknowledgement</p>
+        <p>Privacy Policy</p>
+        <p>CA Supply Chains Act</p>
+        <p>Do Not Sell & CCPA</p>
+        <p>Do Not Contact Me</p>
+        <p>Accessibility Statement</p>
+      </div>
+      <div class="foo-mid-info">
+        <h4>BE THE FIRST TO KNOW</h4>
+        <p>Earn rewards and be the first to hear about sales
+          and special offers.</p>
+          <button id="foot-cna-btn">SIGN UP</button>
+           <div id="foo-social-med">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNrhgOnUZcSEK0NJISbWniapzqjSIxGrc_A&usqp=CAU" alt="" id="social-media">
+           </div>
+      </div>
+  
+        </div>
+        <hr id="foot-mid-line">
+        <div id="copyright-last">
+          <div class="copy-three-div">
+            <div class="logo-flag">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/383px-Flag_of_India.svg.png" alt="" id="logo-flag1">
+            </div>
+            <div class="logo-flag">
+              <img src="../pro-images/project_logo.png" alt="" id="logo-flag2">
+            </div>
+          </div>
+          <div class="copy-three-div">
+            <a href="">© 2023 Eddie Bauer LLC. All Rights Reserved</a>
+          </div>
+          <div class="copy-three-div">
+            <a href="">Terms of Use| Sitemap</a>
+          </div>
+        </div>
+  </div>
+  
+    </body>
+    <script>
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <script src="./register.js"></script>
+  </html>
