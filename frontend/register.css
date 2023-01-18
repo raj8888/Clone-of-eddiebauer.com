@@ -1,0 +1,106 @@
+#mid-reg-cont{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#reg-form-div{
+    width: 50%;
+}
+#img-reg {
+    width: 50%;
+}
+#img-reg img{
+    height: 980px;
+    width: 100%;
+}
+#container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+   color: grey;
+}
+
+#container h2 {
+    letter-spacing: 1px;
+    font-size: 26px;
+    margin: 10px 0;
+    font-weight: 300;
+    color: rgb(70, 68, 68);
+}
+
+#container #div1 {
+    line-height: 2.5rem;
+    margin: 10px 0;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+#container label {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+#container input {
+    margin: 10px 0;
+    padding: 6px;
+    height: 26px;
+    font-size: 14px;
+    width: 90%;
+}
+
+#container #div2 {
+    line-height: 1.5rem;
+    margin: 10px 0;
+    opacity: 0.9;
+    font-size: 14px;
+}
+#container #div2 a {
+    text-decoration: underline;
+}
+
+#container button {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: black;
+    margin: 10px 0;
+    width: 90%;
+}
+
+#container button:hover {
+    background-color: rgb(158, 154, 154);
+    color: black;
+}
+#img-reg{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#reg-img-cont{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#reg-img-cont div img{
+    height: 50px;
+    width: 100px;
+}
+#reg-img-cont div li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#pass-match-msg{
+    font-size: 20px;
+}
