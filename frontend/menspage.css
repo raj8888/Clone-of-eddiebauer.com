@@ -1,0 +1,141 @@
+#men-head-line{
+    text-align: center;
+    background-color: rgb(198, 194, 194);
+    color: rgb(82, 78, 78);
+}
+
+#mens-main-middle{
+   display: flex;
+    width: 95%;
+    margin: auto;
+}
+#mens-filters{
+background-color: rgb(236, 235, 235);
+    width: 20%;
+}
+
+
+#mens-filters{
+    padding: 10px;
+}
+#mens-filters h2{
+    color: rgb(38, 37, 37);
+}
+#mens-filters h3{
+    color: rgb(38, 35, 35);
+}
+
+#mens-filters div h3{
+    background-color: rgb(210, 207, 207);
+}
+
+#mens-filters div div label:hover{
+color: rgb(139, 137, 137);
+}
+
+#mens-data-render{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+}
+.men-one{
+    border-radius: 8px;
+}
+.men-one:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.men-img img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.mens-one-info{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mens-one-info>.mens-title{
+    margin-top: -7px;
+    color: rgb(59, 58, 58);
+}
+.mens-title{
+    height: 60px;
+}
+.mens-prize{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-top: -20px;
+}
+
+.strike-p{
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: rgb(59, 58, 58);
+    font-size: 16px;
+}
+.main-p{
+    color: red;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.mens-colors-count{
+    color: rgb(59, 58, 58);
+    margin-top: -2px;
+    font-size: 16px;
+}
+.men-one-colors{
+    text-align: center;
+    background-color: rgb(213, 211, 211);
+}
+.men-rate-count{
+    display: flex;
+    margin-top: -25px;
+    margin-bottom: -20px;
+    font-size: 16px;
+    
+}
+.mens-rate{
+    margin-right: 15px;
+}
+
+.main-count{
+    text-decoration: underline;
+}
+
+
+#pagination{
+    text-align: center;
+}
+#pagination-wrapper{
+    text-align: center;
+}
+.pagination-btn{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+.pagination-btn:hover{
+   color: white;
+   background-color: black;
+    cursor: pointer;
+}
+.men-see-more{
+    text-align: center;
+    margin-top: 10px;
+}
+.men-see-more button{
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.men-see-more button:hover{
+    color: black;
+    background-color: white;
+}

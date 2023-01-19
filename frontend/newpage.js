@@ -1,57 +1,3 @@
-let reg_btn=document.getElementById("signup-btn")
-reg_btn.addEventListener("click",(event)=>{
-    event.preventDefault()
-    let firstName=document.getElementById("fname")
-    let lastName=document.getElementById("lname")
-    let email=document.getElementById("email")
-    let location=document.getElementById("loc")
-    let mobile=document.getElementById("mob")
-    let pass=document.getElementById('password')
-    let repass=document.getElementById("repassword")
-    let locval=location.value || "NA"
-    let mobval=mobile.value || "NA"
-    let repasscheck=repass.value
-    let obj={
-        firstName:firstName.value,
-        lastName:lastName.value,
-        email:email.value,
-        location:locval,
-        mobile:mobval,
-        pass:pass.value
-    }
-let tempDiv=document.getElementById("div-show-msg")
-if( obj["pass"]!=repasscheck){
-    tempDiv.innerHTML=`
-    <h3 id="pass-match-msg" style="color:red;">Password didn't match</h3>
-    `
-}else{
-    tempDiv.innerHTML=`
-    <h3 id="pass-match-msg" style="color:green;">Password matched</h3>
-    `
-    regUser(obj)
-}
-})
-
-async function regUser(obj){
-    try {
-        let data=await fetch("http://localhost:4500/users/register",{
-        method:"POST",
-        headers:{
-            "Content-type":"application/json"
-        },
-        body:JSON.stringify(obj)
-       })
-       if(data.ok){
-        alert(`User Registered Successfully \n For Login check on Home Page`)
-        window.location.href="index.html"
-       }else{
-        alert("User Registered with same Email-ID")
-        
-       }
-       } catch (error) {
-        console.log(error)
-       }
-}
 
 // login section
 
@@ -157,3 +103,17 @@ newpage_btn.addEventListener('click',(event)=>{
     window.location.href='newpage.html'
 })
 
+let reg_btn=document.getElementById('reg-button')
+if(reg_btn){
+    reg_btn.addEventListener("click",(event)=>{
+        window.location.href='register.html'
+    })
+}
+
+
+
+
+let men_btn_new=document.getElementById("new-men-btn")
+men_btn_new.addEventListener("click",(event)=>{
+    window.location.href="menspage.html"
+})

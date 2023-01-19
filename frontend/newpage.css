@@ -1,0 +1,57 @@
+#new-page-topsec{
+    margin-top: 30px;
+}
+#new-page-topsec img{
+    width: 100%;
+}
+#temp-new{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#new-women-btn{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#new-women-btn,#new-men-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 15px;
+}
+#new-men-btn{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#new-women-btn:hover,#new-men-btn:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(40, 40, 40);
+}
+
+#new-middle-row{
+    text-align: center;
+    background-color: rgb(212, 210, 210);
+}
+
+#new-first-middle-line{
+font-size: 30px;
+font-weight: bold;
+color: rgb(49, 49, 49);
+}
+#new-second-middle-line{
+    font-size: 20px;
+color: rgb(49, 49, 49);
+margin-top: -20px;
+}
+#new-middle-sections{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
+.nm-sec-row img{
+    width: 100%;
+}
