@@ -61,9 +61,11 @@
   carousel.addEventListener("touchend", dragStop);
 
   let reg_btn=document.getElementById('reg-button')
-reg_btn.addEventListener("click",(event)=>{
-    window.location.href='register.html'
-})
+  if(reg_btn){
+      reg_btn.addEventListener("click",(event)=>{
+          window.location.href='register.html'
+      })
+  }
 
 
 // login section
@@ -99,18 +101,23 @@ async function loginUser(obj){
          localStorage.setItem('token',token)
          localStorage.setItem('id',userID)
          localStorage.setItem('firstName',firstName)
+         showname()
      }    
      )
      alert('login successfull')
-     window.location.href='index.html'
     }else{
      alert("wrong credentials")
     }
     } catch (error) {
      console.log(error)
+     
     }
  }
 
+ let locstrgName=localStorage.getItem('firstName')
+ if(locstrgName){
+    showname()
+ }
 
 function showname(){
     let fname=localStorage.getItem("firstName")
@@ -134,19 +141,33 @@ function showname(){
     </div>
     `
     }
+    let timeout=setTimeout(() => {
+       window.location.href='index.html'
+      }, 500)
+
+    clearTimeout(timeout);
+
+    let log_out=document.getElementById("log-out")
+    log_out.addEventListener("click",(event)=>{
+    logOutfun()
+})
    
 }
-showname()
 
-let log_out=document.getElementById("log-out")
-log_out.addEventListener("click",(event)=>{
+
+function logOutfun(){
     localStorage.removeItem('token');
     localStorage.removeItem('id');
     localStorage.removeItem('firstName');
     window.location.href='index.html'
-})
+}
 
 let foot_sp=document.getElementById("foot-cna-btn")
 foot_sp.addEventListener("click",(event)=>{
     window.location.href="register.html"
+})
+
+let newpage_btn=document.getElementById("newbtn-navbar")
+newpage_btn.addEventListener('click',(event)=>{
+    window.location.href='newpage.html'
 })

@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./menspage.css">
   </head>
   <body>
     <!-- NAVBAR -->
@@ -558,61 +558,134 @@
         >
       </div>
     </div>
-<!-- REGISTER FORM -->
-<div id="mid-reg-cont">
-    <div id="reg-form-div">
-        <form id="reg-form">
-            <div id="container">
-                <h2>Create A New Account</h2>
-              <div id="div-show-msg"></div>
-                <p id="login_email"></p>
-        
-                <label>FirstName<span style="color: red">*</span></label>
-                <input type="text" id="fname" required />
-                <label>LastName<span style="color: red">*</span></label>
-                <input type="text" id="lname" required />
-                <label for="email">Email<span style="color: red">*</span></label>
-                <input type="email" id="email" required />
-                <label for="location">Location</label><input type="text" id="loc">
-                <label for="mobile">Mobile</label><input type="text" id="mob">
-                <label>Create password<span style="color: red">*</span></label>
-                <input type="password" id="password" autocomplete="off" required />
-                <label>ReEnter password<span style="color: red">*</span></label>
-                <input type="password" id="repassword" autocomplete="off" required />
-                <div id="div2">
-                  <p>
-                    By creating an account, you agree to our
-                    <a href="#">Privacy Policy</a>and
-                    <a href="#">Terms & Conditions</a>.
-                  </p>
-                </div>
-        
-                <button id="signup-btn">Create Account</button>
-              </div>
-        </form>
-    </div>
-    <div id="img-reg">
-        <img src="https://www.eddiebauer.com/static/signup-right-image.png" alt="">
-        <div id="reg-img-cont">
-            <div id="img-tp">
-                <img src="../pro-images/project_logo.png" alt="">
-            </div>
-            <div>
-                <h1>Adventure Rewards</h1>
-                <h3>One Account Gets You Everything</h3>
-                <p>Adventure Rewards, Exclusive Offers and More!</p>
-                <li>Earn points on every purchase</li>
-                <li>Quarterly Certificates</li>
-                <li>Free Shipping Benefits</li>
-                <li>Early access to new products & promotions</li>
-                <li>Birthday Gift</li>
-                <li>Receipts & Easy Returns</li>
-            </div>
-        </div>
-    </div>
-</div>
 
-    <!-- FOOTER -->
+    <!-- mens middle section -->
+     <div id="men-head-line">
+      <h1>Mens Cold Weather Training</h1>
+     </div>
+
+     <div id="mens-main-middle">
+<!-- filters -->
+      <div id="mens-filters">
+        <h2><i class="fa fa-filter"></i> Check Filter's</h2>
+        <hr>
+        <div id="prize-categories">
+          <h3>By Prize</h3>
+          <div>
+            <input type="checkbox" id="checklh" value="prizelh">
+            <label for="">Price Low to High</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkhl" value="prizehl">
+            <label for="">Price High to Low</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkcr" value="prizecr">
+            <label for="">Customer Rating</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checknew" value="prizenew">
+            <label for="">Newest
+            </label>
+          </div>
+        </div>
+        <hr>
+        <div id="filter-categores">
+          <h3>By Categories</h3>
+          <div>
+            <input type="checkbox" id="mencheck" value="men">
+            <label for="">Men's </label>
+          </div>
+          <div>
+            <input type="checkbox" id="womencheck" value="women">
+            <label for="">Women's </label>
+          </div>
+          <div>
+            <input type="checkbox" id="kidscheck" value="kids">
+            <label for="">Kid's</label>
+          </div>
+          <div>
+            <input type="checkbox" id="trekkercheck" value="trekker">
+            <label for="">Trekker's</label>
+          </div>
+          <div>
+            <input type="checkbox" id="gncheck" value="Gender">
+            <label for="">Gender Neutral</label>
+          </div>
+        </div>
+        <hr>
+        <div id="size-categores">
+          <h3>By Size</h3>
+          <div>
+            <input type="checkbox" id="xscheck" value="sizexs">
+            <label for="">XS </label>
+          </div>
+          <div>
+            <input type="checkbox" id="scheck" value="sizes">
+            <label for="">S </label>
+          </div>
+          <div>
+            <input type="checkbox" id="mcheck" value="sizem">
+            <label for="">M</label>
+          </div>
+          <div>
+            <input type="checkbox" id="lcheck" value="sizel">
+            <label for="">L</label>
+          </div>
+          <div>
+            <input type="checkbox" id="xlcheck" value="sizexl">
+            <label for="">XL</label>
+          </div>
+          <div>
+            <input type="checkbox" id="xxlcheck" value="sizexxl">
+            <label for="">XXL</label>
+          </div>
+          <div>
+            <input type="checkbox" id="xxxlcheck" value="sizexxl">
+            <label for="">XXXL</label>
+          </div>
+          <div>
+            <input type="checkbox" id="oscheck" value="sizeos">
+            <label for="">ONE SIZE</label>
+          </div>
+        </div>
+        <hr>
+        <div id="offer-categores">
+          <h3>By Offer</h3>
+          <div>
+            <input type="checkbox" id="checkthir" value="offerthir">
+            <label for="">up to 30% </label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkfour" value="offerfour">
+            <label for="">up to 40%</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkfive" value="offerfive">
+            <label for="">up to 50%</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checksix" value="offersix">
+            <label for="">up to 60%</label>
+          </div>
+        </div>
+
+
+      </div>
+  <!-- renderdata here -->
+      <div id="mens-data-render"></div>
+     </div>
+     <div id="pagination-wrapper">
+      <div id="total-page">
+        <h3>Total pages</h3>
+      </div>
+      <div id="pagination">
+      </div>
+     </div>
+    
+
+
+    <!-- Footer -->
     <div id="com-footer">
         <div id="fir-foo-div">
           <div class="store-locator">
@@ -728,5 +801,5 @@
       }
     }
     </script>
-    <script src="./register.js"></script>
+    <script src="./menspage.js"></script>
   </html>
