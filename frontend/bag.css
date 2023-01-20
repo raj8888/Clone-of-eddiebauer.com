@@ -1,0 +1,220 @@
+#show-notlogin-msg{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(241, 237, 237);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#show-notlogin-msg img{
+   width: 20%;
+}
+
+#mid-log-button{
+  background-color: black;
+  color: white;
+    padding: 10px 45px;
+    font-size: 15px;
+}
+#mid-log-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#cart-mid-div{
+    display: flex;
+    width:90%;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+#show-proin-cart{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 68%;
+    margin: auto;
+}
+
+
+.pro-img img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.pro-one{
+    margin-bottom: 20px;
+}
+.pro-one-info{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pro-one-info>.pro-title{
+    margin-top: -7px;
+    color: rgb(59, 58, 58);
+}
+.pro-title{
+    height: 60px;
+}
+.pro-prize{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-top: -20px;
+}
+.pro-strike-prize{
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: rgb(59, 58, 58);
+    font-size: 16px;
+}
+.pro-main-prize{
+    color: rgb(232, 4, 4);
+    font-weight: bolder;
+    font-size: 16px;
+}
+.pro-colors-count{
+    color: rgb(59, 58, 58);
+    margin-top: -2px;
+    font-size: 16px;
+}
+.pro-one-colors{
+    text-align: center;
+    background-color: rgb(213, 211, 211);
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.pro-one-colors img{
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    border: 1px solid black;
+    padding: 2px;
+}
+.pro-rate-count{
+    display: flex;
+    margin-top: -25px;
+    margin-bottom: -10px;
+    font-size: 16px;
+    
+}
+.pro-see-more{
+    text-align: center;
+}
+.pro-rate{
+    margin-right: 15px;
+}
+
+.pro-count{
+    text-decoration: underline;
+}
+
+.pro-quan{
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.see-more,.see-more-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+.see-more-btn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.dlt-btn-div{
+    margin: auto;
+    margin-top: 10px;
+}
+.dlt-btn{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+.dlt-btn:hover{
+    color: rgb(61, 61, 61);
+    background-color: white;
+    cursor: pointer;
+}
+#total-amount-cart{
+    width: 20%;
+    background-color: rgb(222, 222, 222);
+}
+#bag-sum{
+   text-align: center;
+}
+.all-ship-info{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+#sumhr{
+    width: 90%;
+    height: 2px;
+    background-color: grey;
+}
+.ship-ti{
+/* border: 1px solid black; */
+width:40%
+}
+.prize-div{
+    /* border: 1px solid black; */
+    width:40%;
+    text-align: right;
+    /* padding-right: 30px; */
+}
+#coupon-sec{
+    margin: auto;
+    margin-top: 30px;
+}
+
+#coupon-sec input{
+    width: 60%;
+    margin-left: 15px;
+    height: 30px;
+    font-weight: bold;
+}
+#coupon-sec button{
+    padding: 8px 10px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+#coupon-sec button:hover{
+    background-color: rgb(54, 54, 54);
+}
+#checkout-sec{
+    margin: auto;
+    width: 90%;
+}
+#pay-btn{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 10px;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+}
+#pay-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#show-cc-msg{
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}

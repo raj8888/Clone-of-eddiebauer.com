@@ -17,10 +17,10 @@ reg_btn.addEventListener("click",(event)=>{
         email:email.value,
         location:locval,
         mobile:mobval,
-        pass:pass.value
+        password:pass.value
     }
 let tempDiv=document.getElementById("div-show-msg")
-if( obj["pass"]!=repasscheck){
+if( obj["password"]!=repasscheck){
     tempDiv.innerHTML=`
     <h3 id="pass-match-msg" style="color:red;">Password didn't match</h3>
     `

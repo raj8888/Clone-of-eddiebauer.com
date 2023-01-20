@@ -1,6 +1,8 @@
+const { json } = require('express')
 const express=require('express')
 const mensRouter=express.Router()
 const {mensModel}=require("../models/mencolec.model")
+const { userModel } = require('../models/users.model')
 
 // localhost:4500/mens?p=1
 mensRouter.get("/",async(req,res)=>{
@@ -25,6 +27,20 @@ mensRouter.get("/product/:id",async(req,res)=>{
         res.status(400).send({"msg":"Something went wrong"})
     }
 })
+
+mensRouter.post("/cartitem",async(req,res)=>{
+    // let userID=req.body.userID
+    let itemarray=(req.body.itemsArray)
+    try {
+        let allItems= await mensModel.find({ '_id': { $in: itemarray}});
+        res.status(200).send({"data":allItems})
+    } catch (error) {
+        console.log(error)
+        res.status(400).send({"msg":"Something went wrong"})
+    }
+})
+
+
 module.exports={
     mensRouter
 }
