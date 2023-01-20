@@ -167,6 +167,7 @@ function renderProduct(elem){
                     <option value="7">7</option>
                 </select>
                 <button id="addtobag">ADD TO BAG</button>
+                <p id="login-or-not"></p>
         </div>
     `
     let sizediv=document.getElementById("sizes-div")
@@ -201,7 +202,50 @@ function renderProduct(elem){
        let showsize=document.getElementById("selec-size")
        showsize.innerText="Selected Size: XXXL"
     })
+
+
+let addToBag=document.getElementById("addtobag")
+addToBag.addEventListener("click",(event)=>{
+    let checkLogin=localStorage.getItem('token')
+    if(checkLogin){
+        let productID=localStorage.getItem("productID")
+        let userID=localStorage.getItem('id')
+        let obj={
+            id:userID,
+            productID:productID
+        }
+        addIteminArrayofUser(obj)
+    }else{
+        let showmessage=document.getElementById("login-or-not")
+        showmessage.style.color='rgb(238, 12, 12)'
+        showmessage.innerText=`Please Login First`
+    }
+})
 }
+
+async function addIteminArrayofUser(obj){
+    try {
+        let addItem=await fetch(`http://localhost:4500/users/addtobag`,{
+        method:"PATCH",
+        headers:{
+            "Content-type":"application/json",
+            "Authorization":localStorage.getItem('token')
+        },
+        body:JSON.stringify(obj)
+    })
+    if(addItem.ok){
+        let showmessage=document.getElementById("login-or-not")
+        showmessage.style.color='green'
+        showmessage.innerText=`Succefully  Added  to  bag`
+    }
+    } catch (error) {
+        
+    }
+}
+
+
+
+
 
 
 

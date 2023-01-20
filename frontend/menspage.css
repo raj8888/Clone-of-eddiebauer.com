@@ -14,7 +14,11 @@ background-color: rgb(236, 235, 235);
     width: 20%;
 }
 
-
+#data-load-img{
+    margin-top: -380px;
+    width: 30px;
+    margin-left: 500px;
+}
 #mens-filters{
     padding: 10px;
 }

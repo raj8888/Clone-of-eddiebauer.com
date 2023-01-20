@@ -45,6 +45,40 @@ userRouter.post("/login",async(req,res)=>{
     }
 })
 
+userRouter.get('/bagitems/:id',async(req,res)=>{
+    let id=req.params.id
+    try {
+        let mensData=await userModel.find({_id:id})
+        res.status(200).send({"itemsArray":mensData[0]['itemsArray']})
+    } catch (error) {
+        res.status(400).send({"msg":"Something went wrong"})
+    }
+})
+
+userRouter.patch('/addtobag',async(req,res)=>{
+    let id=req.body.id
+    let prouctId=req.body.productID
+    try {
+        let mensData=await userModel.find({_id:id})
+        let itemsArray=mensData[0].itemsArray
+        itemsArray.push(prouctId)
+        let updateData=await userModel.findByIdAndUpdate(id,{itemsArray:itemsArray})
+       res.status(200).send({'msg':"added"})
+    } catch (error) {
+        res.status(400).send({"msg":"Something went wrong"})
+    }
+})
+
+userRouter.patch('/updateitems',async(req,res)=>{
+   let userID=req.body.userID
+   let itemsArray=req.body.itemsArray
+   try {
+    await userModel.findOneAndUpdate({_id:userID},{itemsArray:itemsArray})
+    res.status(200).send({'msg':"updated"})
+   } catch (error) {
+    res.status(400).send({"msg":"Something went wrong"})
+   }
+})
 module.exports={
     userRouter
 }
