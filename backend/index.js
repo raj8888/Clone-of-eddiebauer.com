@@ -4,6 +4,8 @@ const cors=require("cors")
 const {connection}=require("./config/db")
 const{userRouter}=require('./routes/user.router')
 const {mensRouter}=require("./routes/menscolec.route")
+const {adminRouter}=require("./routes/admin.route")
+
 const{authenticator}=require("./middlewares/authenticater.middleware")
 require('dotenv').config()
 const app=express()
@@ -13,7 +15,7 @@ app.use(cors())
 
 app.use('/users',userRouter)
 app.use("/mens",mensRouter)
-
+app.use('/admin',adminRouter)
 app.use(authenticator)
 
 

@@ -2,7 +2,7 @@ const { json } = require('express')
 const express=require('express')
 const mensRouter=express.Router()
 const {mensModel}=require("../models/mencolec.model")
-const { userModel } = require('../models/users.model')
+
 
 // localhost:4500/mens?p=1
 mensRouter.get("/",async(req,res)=>{
@@ -39,8 +39,39 @@ mensRouter.post("/cartitem",async(req,res)=>{
         res.status(400).send({"msg":"Something went wrong"})
     }
 })
+mensRouter.patch("/update/:id",async(req,res)=>{
+    let payload=req.body
+    let id=req.params.id
+    try {
+        await mensModel.findByIdAndUpdate({"_id":id},payload)
+        res.status(200).send({"msg":updated})
+    } catch (error) {
+        console.log(error)
+        res.status(400).send({"msg":"Something went wrong"})
+    }
+})
+mensRouter.post("/additem",async(req,res)=>{
+    let data=req.body
+    try {
+        let addItem=new mensModel(data) 
+        await addItem.save()
+        res.status(200).send({"msg":added})
+    } catch (error) {
+        console.log(error)
+        res.status(400).send({"msg":"Something went wrong"})
+    }
+})
 
-
+mensRouter.delete('/delete/:id',async(req,res)=>{
+    let dltID=req.params.id
+    try {
+        await mensModel.findByIdAndDelete(dltID)
+        res.status(200).send({"msg":"deleted"})
+    } catch (error) {
+        console.log(error)
+        res.status(400).send({"msg":"Something went wrong"})
+    }
+})
 module.exports={
     mensRouter
 }

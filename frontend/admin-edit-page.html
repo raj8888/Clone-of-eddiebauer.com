@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../pro-images/project_logo.png">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <title>Adventure Apha/Admin</title>
+    <link rel="stylesheet" href="./admin-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="bdy_edit_pge" >
+    <div class="topnav" id="myTopnav">
+        
+        <a href="./admin_page.html" class="active"><img src="../pro-images/project_logo.png" alt=""></a>
+        
+        <a href="./admin_page.html" class="content">Administrative</a>
+        <a href="#news" class="content">Term of Use</a>
+        <a href="./index.html" class="content">Visit Our Website</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    <div id="edit_bar">
+        <button id="edit_pge_btn"></button>
+    </div>
+
+    <div class="form_of_editing">
+        <form id="edit_form">
+        <div id="inside_form">
+            <div class="comp_data" id="comp_nme">
+                <label for="compmyName">Product Title : </label>
+                <input type="text" id="company_name" placeholder="Enter product title..." required>
+             </div>
+             <div class="comp_data" id="comp_lgo">
+                <label for="companylogo">URL of Image : </label>
+             <input type="text" id="company-logo" placeholder="Enter URL of product here..." required >
+             </div>
+             <div class="comp_data" id="job_rle">
+                <label for="jobrole">Strike Prize : </label>
+                <input type="text" id="company_job_role" placeholder="Enter strike prize here..." required readonly>
+             </div>
+             <div class="comp_data" id="comp_cntct">
+                <label for="contact">Main Prize : </label>
+                <input type="text" id="company_contact" placeholder="Enter main here..."  required readonly>
+             </div>
+             <div class="comp_data" id="comp_exp">
+                <label for="experience">Color Labels : </label>
+                <input type="text" id="company_exp" placeholder="Enter total colors or pattern"  required readonly>
+             </div>
+             <div class="comp_data" id="comp_slry">
+                <label for="salary">Color label 1: </label>
+                <input type="text" id="company_salary" placeholder="Enter URL of color 1..." required readonly>
+             </div>
+             <div class="comp_data" id="comp_lct">
+                <label for="location">Color label 2: </label>
+                <input type="text" id="company_loca" placeholder="Enter URL of color 2..." required readonly>
+             </div>
+             <div class="comp_data" id="comp_desc">
+                <p><label for="description">Color label 2:</label></p>
+                <input name="desc" id="company_desc"  placeholder="Enter URL of color 3..." required readonly></input>
+             </div>
+        </div>
+        <div class="submit_btn">
+            <div class="cancel_btn">
+                <button id="cancel"><a href="./admin-home.html"> Cancel</a>
+               </button>
+            </div>
+            <div class="save_btn">
+                <button id="save">Save</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    <script src="./admin_edit_page.js"></script>
+</body>
+</html>
