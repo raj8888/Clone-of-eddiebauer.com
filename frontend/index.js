@@ -75,12 +75,43 @@ loginbtn.addEventListener("click",(event)=>{
     event.preventDefault()
     let email=document.getElementById("emailip")
     let pass=document.getElementById("passip")
-    let obj={
-        email:email.value,
-        password:pass.value
+    if(email.value=="alfaadmin@gmail.com" && pass.value==="adalfa123"){
+        let obj={
+            email:email.value,
+            password:pass.value
+        }
+        renderadminpage(obj)
+    }else{
+        let obj={
+            email:email.value,
+            password:pass.value
+        }
+        loginUser(obj)
     }
-    loginUser(obj)
+    
 })
+async function renderadminpage(obj){
+    try {
+        let data=await fetch("http://localhost:4500/admin/login",{
+        method:"POST",
+        headers:{
+            "Content-type":"application/json"
+        },
+        body:JSON.stringify(obj)
+       })
+       if(data.ok){
+        alert('admin login successfull')
+        window.location.href="admin-home.html"
+        
+       }else{
+        alert("wrong credentials")
+       }
+       } catch (error) {
+        console.log(error)
+        
+       }
+}
+
 
 async function loginUser(obj){
     try {

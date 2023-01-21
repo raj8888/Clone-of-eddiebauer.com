@@ -3,6 +3,7 @@ const jwt=require('jsonwebtoken')
 const bcrypt=require('bcrypt')
 const userRouter=express.Router()
 const {userModel}=require('../models/users.model')
+const { adminModel } = require('../models/admin.model')
 
 userRouter.post('/register',async(req,res)=>{
     const {firstName,lastName,email,location,mobile,password}=req.body
@@ -78,6 +79,21 @@ userRouter.patch('/updateitems',async(req,res)=>{
    } catch (error) {
     res.status(400).send({"msg":"Something went wrong"})
    }
+})
+
+userRouter.get("/all",async(req,res)=>{
+    const {email,password}=req.body
+    try {
+       let findall=await userModel.find()
+       let admin=await adminModel.find({email})
+      if(admin){
+        res.status(200).send({'data':findall})
+      }  else{
+        res.status(400).send({"msg":"Something went wrong"})
+      }
+    } catch (error) {
+        res.status(400).send({"msg":"Something went wrong"})
+    }
 })
 module.exports={
     userRouter
