@@ -252,3 +252,5 @@ function renderPrize(data){
     })
 
 }
+
+// timepass
