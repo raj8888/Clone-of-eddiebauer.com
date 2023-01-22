@@ -1,7 +1,7 @@
 
 async function renderuserdata(){
     try {
-        let data=await fetch("http://localhost:4500/users/all")
+        let data=await fetch("https://modern-buckle-lion.cyclic.app/users/all")
     if(data.ok){
         let temp=data.json()
         .then(res=>{
@@ -30,7 +30,7 @@ allmensdata()
 allmensdata()
 async function allmensdata(page=0){
     try {
-        let data=await fetch(`http://localhost:4500/mens?p=${page}`,{
+        let data=await fetch(`https://modern-buckle-lion.cyclic.app/mens?p=${page}`,{
             method:"GET",
             headers:{
                 "Content-type":"application/json"
@@ -121,7 +121,7 @@ function rendermensdata(data){
 
 async function dltproduct(data_id){
    try {
-    let passid=await fetch(`http://localhost:4500/mens/delete/${data_id}`,{
+    let passid=await fetch(`https://modern-buckle-lion.cyclic.app/mens/delete/${data_id}`,{
         method:'DELETE',
     })
     if(passid.ok){

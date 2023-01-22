@@ -93,7 +93,7 @@ if(dataId==null){
 
 async function addtoserver(obj){
 try {
-    let add_data=await fetch('http://localhost:4500/mens/additem',{
+    let add_data=await fetch('https://modern-buckle-lion.cyclic.app/mens/additem',{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -134,7 +134,7 @@ window.addEventListener("load",()=>{
 
 async function editData(id){
     try {
-        let edit_data=await fetch(`http://localhost:4500/mens/product/${id}`);
+        let edit_data=await fetch(`https://modern-buckle-lion.cyclic.app/mens/product/${id}`);
         if(edit_data.ok){
             let temp=await edit_data.json()
            .then(res=>{
@@ -250,7 +250,7 @@ if(dataId!=null){
 
 async function finalData(obj){
     try {
-        let edit_fetch=await fetch(`http://mens/update/${dataId}`,{
+        let edit_fetch=await fetch(`http:/https://modern-buckle-lion.cyclic.app/mens/update/${dataId}`,{
             method:"PATCH",
             headers:{
                 "Content-Type":"application/json"
