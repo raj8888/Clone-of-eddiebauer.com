@@ -92,7 +92,7 @@ loginbtn.addEventListener("click",(event)=>{
 })
 async function renderadminpage(obj){
     try {
-        let data=await fetch("http://localhost:4500/admin/login",{
+        let data=await fetch("https://modern-buckle-lion.cyclic.app/admin/login",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
@@ -115,7 +115,7 @@ async function renderadminpage(obj){
 
 async function loginUser(obj){
     try {
-     let data=await fetch("http://localhost:4500/users/login",{
+     let data=await fetch("https://modern-buckle-lion.cyclic.app/users/login",{
      method:"POST",
      headers:{
          "Content-type":"application/json"

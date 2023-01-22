@@ -14,7 +14,7 @@ loginbtn.addEventListener("click",(event)=>{
 
 async function loginUser(obj){
     try {
-     let data=await fetch("http://localhost:4500/users/login",{
+     let data=await fetch("https://modern-buckle-lion.cyclic.app/users/login",{
      method:"POST",
      headers:{
          "Content-type":"application/json"
@@ -118,7 +118,7 @@ if(reg_btn){
 getalldata()
 async function getalldata(page=0){
     try {
-        let data=await fetch(`http://localhost:4500/mens?p=${page}`,{
+        let data=await fetch(`https://modern-buckle-lion.cyclic.app/mens?p=${page}`,{
             method:"GET",
             headers:{
                 "Content-type":"application/json"

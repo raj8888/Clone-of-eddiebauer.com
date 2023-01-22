@@ -14,7 +14,7 @@ loginbtn.addEventListener("click",(event)=>{
 
 async function loginUser(obj){
     try {
-     let data=await fetch("http://localhost:4500/users/login",{
+     let data=await fetch("https://modern-buckle-lion.cyclic.app/users/login",{
      method:"POST",
      headers:{
          "Content-type":"application/json"
@@ -140,7 +140,7 @@ function rendernotlogin(){
 async function loadCart(id){
     
     try {
-        let bagData=await fetch(`http://localhost:4500/users/bagitems/${id}`)
+        let bagData=await fetch(`https://modern-buckle-lion.cyclic.app/users/bagitems/${id}`)
         if(bagData.ok){
             let temp=bagData.json()
             .then(res=>{
@@ -163,7 +163,7 @@ async function loadCart(id){
 async function getcartData(itemsArray){
     // console.log(itemsArray)
     try {
-    let data=await fetch("http://localhost:4500/mens/cartitem",{
+    let data=await fetch("https://modern-buckle-lion.cyclic.app/mens/cartitem",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
@@ -276,7 +276,7 @@ updaterow(obj)
 
 async function updaterow(obj){
 try {
-    let newarray=await fetch('http://localhost:4500/users/updateitems',{
+    let newarray=await fetch('https://modern-buckle-lion.cyclic.app/users/updateitems',{
         method:"PATCH",
         headers:{
             "Content-type":"application/json"

@@ -14,7 +14,7 @@ loginbtn.addEventListener("click",(event)=>{
 
 async function loginUser(obj){
     try {
-     let data=await fetch("http://localhost:4500/users/login",{
+     let data=await fetch("https://modern-buckle-lion.cyclic.app/users/login",{
      method:"POST",
      headers:{
          "Content-type":"application/json"
@@ -116,7 +116,7 @@ let proId=localStorage.getItem("productID")
 if(proId){
     showPro()
     async function showPro(){
-        let profetch=await fetch(`http://localhost:4500/mens/product/${proId}`)
+        let profetch=await fetch(`https://modern-buckle-lion.cyclic.app/mens/product/${proId}`)
         if(profetch.ok){
             profetch.json()
             .then(res=>
@@ -225,7 +225,7 @@ addToBag.addEventListener("click",(event)=>{
 
 async function addIteminArrayofUser(obj){
     try {
-        let addItem=await fetch(`http://localhost:4500/users/addtobag`,{
+        let addItem=await fetch(`https://modern-buckle-lion.cyclic.app/users/addtobag`,{
         method:"PATCH",
         headers:{
             "Content-type":"application/json",
