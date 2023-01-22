@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="16x16" href="../pro-images/project_logo.png">
-    <title>AA/Register from</title>
+    <title>Advneture Alpha</title>
     <link rel="stylesheet" href="./nav_and_footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./register.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bag.css">
+    <link rel="stylesheet" href="./shipment.css">
   </head>
   <body>
     <!-- NAVBAR -->
@@ -65,7 +69,7 @@
             </div>
           </div>
           <a href="./bag.html"
-             class="gotobagsec"><img src="../pro-images//bag-logo.jpg" alt="" id="bag-sec"
+            class="gotobagsec"><img src="../pro-images//bag-logo.jpg" alt="" id="bag-sec"
           /></a>
           <a href="./bag.html" id="bag-sec" class="gotobagsec">bag</a>
         </div>
@@ -559,61 +563,78 @@
         >
       </div>
     </div>
-<!-- REGISTER FORM -->
-<div id="mid-reg-cont">
-    <div id="reg-form-div">
-        <form id="reg-form">
-            <div id="container">
-                <h2>Create A New Account</h2>
-              <div id="div-show-msg"></div>
-                <p id="login_email"></p>
-        
-                <label>FirstName<span style="color: red">*</span></label>
-                <input type="text" id="fname" required />
-                <label>LastName<span style="color: red">*</span></label>
-                <input type="text" id="lname" required />
-                <label for="email">Email<span style="color: red">*</span></label>
-                <input type="email" id="email" required />
-                <label for="location">Location</label><input type="text" id="loc">
-                <label for="mobile">Mobile</label><input type="text" id="mob">
-                <label>Create password<span style="color: red">*</span></label>
-                <input type="password" id="password" autocomplete="off" required />
-                <label>ReEnter password<span style="color: red">*</span></label>
-                <input type="password" id="repassword" autocomplete="off" required />
-                <div id="div2">
-                  <p>
-                    By creating an account, you agree to our
-                    <a href="#">Privacy Policy</a>and
-                    <a href="#">Terms & Conditions</a>.
-                  </p>
-                </div>
-        
-                <button id="signup-btn">Create Account</button>
-              </div>
-        </form>
-    </div>
-    <div id="img-reg">
-        <img src="https://www.eddiebauer.com/static/signup-right-image.png" alt="">
-        <div id="reg-img-cont">
-            <div id="img-tp">
-                <img src="../pro-images/project_logo.png" alt="">
-            </div>
-            <div>
-                <h1>Adventure Rewards</h1>
-                <h3>One Account Gets You Everything</h3>
-                <p>Adventure Rewards, Exclusive Offers and More!</p>
-                <li>Earn points on every purchase</li>
-                <li>Quarterly Certificates</li>
-                <li>Free Shipping Benefits</li>
-                <li>Early access to new products & promotions</li>
-                <li>Birthday Gift</li>
-                <li>Receipts & Easy Returns</li>
-            </div>
-        </div>
-    </div>
-</div>
 
-    <!-- FOOTER -->
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+            
+              <div class="row">
+                <div class="col-50">
+                  <h2 id="ship-head">Shipment Details</h2>
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Enter first name here...">
+                  <label for="email"> Email</label>
+                  <input type="text" id="email" name="email" placeholder="Enter email here...">
+                  <label for="adr"> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="Enter shipment address here...">
+                  <label for="city"> City</label>
+                  <input type="text" id="city" name="city" placeholder="Enter city here...">
+      
+                  <div class="row" id="state-zip">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="Enter state here...">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip" >Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="Enter zip code here...">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50" id="pay-div">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Enter name as per card...">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="Enter card number...">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="Enter expiry month of card...">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="Enter expiry year of card...">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="Enter CVV as per card...">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+          </div>
+        </div>
+        <div id="total-amount-cart">
+          
+        </div>
+      </div>
+
+
+    <!-- footer -->
     <div id="com-footer">
         <div id="fir-foo-div">
           <div class="store-locator">
@@ -729,5 +750,6 @@
       }
     }
     </script>
-    <script src="./register.js"></script>
+    <script src="./shipment.js"></script>
   </html>
+  

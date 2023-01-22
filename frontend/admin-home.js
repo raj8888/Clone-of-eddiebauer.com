@@ -217,3 +217,10 @@ function CreatePagButton(total_page){
    }
    return array;
 }
+
+let add_btn=document.querySelector("#add_page_btn")
+add_btn.addEventListener("click",(event)=>{
+  localStorage.removeItem("editId")
+  window.location.href="admin-edit-page.html"
+
+})
