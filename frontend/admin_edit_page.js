@@ -50,7 +50,7 @@ if(dataId==null){
         </div>
         <div class="comp_data" id="comp_desc">
            <p><label for="description">Color label 3: </label></p>
-           <textarea name="desc" id="company_desc" cols="30" rows="10" placeholder="Enter URL of color 3..." required></textarea>
+           <input name="desc" id="company_desc" cols="30" rows="10" placeholder="Enter URL of color 3..." required></input>
         </div>
    </div>
    <div class="submit_btn">
@@ -109,6 +109,7 @@ try {
     alert("Bad Request")
 }
 }
+
 window.addEventListener("load",()=>{
    if(dataId!=null){
     editData(dataId)
@@ -121,22 +122,25 @@ window.addEventListener("load",()=>{
 })
     
 
-let edit_strt_btn=document.querySelector("#edit_pge_btn")
-edit_strt_btn.addEventListener("click",(event)=>{
-    setTimeout(() => {
-        edit_strt_btn.innerText="In Process..."
-        editData(dataId)
-    }, 1000);
-    edit_strt_btn.innerText="Fetching Data..."
+// let edit_strt_btn=document.querySelector("#edit_pge_btn")
+// edit_strt_btn.addEventListener("click",(event)=>{
+//     setTimeout(() => {
+//         edit_strt_btn.innerText="In Process..."
+//         editData(dataId)
+//     }, 1000);
+//     edit_strt_btn.innerText="Fetching Data..."
    
-})
+// })
 
 async function editData(id){
     try {
         let edit_data=await fetch(`http://localhost:4500/mens/product/${id}`);
         if(edit_data.ok){
             let temp=await edit_data.json()
-            showdata(temp)
+           .then(res=>{
+            showdata(res.data[0])
+           })
+            // showdata(temp)
         }else{
             
         }

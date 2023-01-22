@@ -313,7 +313,7 @@ text-align: center;
   width: 20%;
   margin: auto;
   text-align: center;
-  background-color:rgb(75, 112, 215) ;
+  background-color:rgb(56, 56, 56) ;
   color: white;
   padding: 10px ;
   font-size: 15px;
@@ -327,7 +327,7 @@ text-align: center;
   border: none;
   color: white;
   font-weight: bolder;
-  background-color:rgb(75, 112, 215) ;
+  background-color:rgb(52, 52, 52) ;
 }
 #edit_pge_btn:hover,body button:hover{
   background-color:rgb(141, 141, 141) ;
@@ -367,7 +367,7 @@ text-align: center;
 }
 .submit_btn div button{
   padding: 10px 35%;
-  background-color: rgb(75, 112, 215);
+  background-color: rgb(66, 66, 66);
   border: none;
   color: white;
   font-weight: bolder;
@@ -375,7 +375,7 @@ text-align: center;
   border-radius: 8px;
 }
 .submit_btn div button:hover{
-  background-color: rgb(93, 129, 228);
+  background-color: rgb(117, 117, 117);
 }
 #cancel a{
   color: white;
