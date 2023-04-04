@@ -45,13 +45,13 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/jZWtRQV/dashboard.png)
+![App Screenshot](https://imghost.net/ib/uW9w3KKtnSrdL2F_1680609568.png)
 
 
-![App Screenshot](https://i.ibb.co/s9KsPRH/newpage.png)
+![App Screenshot](https://imghost.net/ib/vbo6OMOsWBvu4Yp_1680609659.png)
 
 
-![App Screenshot](https://i.ibb.co/jkz67hG/shop.png)
+![App Screenshot](https://imghost.net/ib/sfTagCLZAeozY3V_1680609711.png)
 
 ![App Screenshot](https://i.ibb.co/phpNjtG/signup.png)
 
