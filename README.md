@@ -1,6 +1,6 @@
 # adventureAlpha.com
 
-EddieBaur is a american fashion and adventure clothing retailer with approximately 400 stores across the U.S.A., Canada, UK and Germany that offers an assortment of clothing, sports, adventure gears and tools.
+Adventure Alpha is a american fashion and adventure clothing retailer with approximately 400 stores across the U.S.A., Canada, UK and Germany that offers an assortment of clothing, sports, adventure gears and tools.
 
 
 ## Features
